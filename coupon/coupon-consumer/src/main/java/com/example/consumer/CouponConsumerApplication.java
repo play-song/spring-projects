@@ -9,8 +9,9 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 public class CouponConsumerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CouponConsumerApplication.class, args);
-	}
+  public static void main(String[] args) {
+		System.setProperty("spring.config.name", "application-core, application-consumer");
+    SpringApplication.run(CouponConsumerApplication.class, args);
+  }
 
 }
